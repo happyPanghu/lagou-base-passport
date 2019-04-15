@@ -13,7 +13,12 @@ npm install --save-dev lagou-base-passport
 
 
 ```js
-import lgSa from 'lagou-base-passport'
+import passport from 'lagou-base-passport'
+
+// 调用passport 并使用回调函数
+passport(function() {
+   window.location.reload();
+})
  
 ```
 
@@ -21,29 +26,21 @@ import lgSa from 'lagou-base-passport'
 ## API
 
 
-### .track(event, actions)
+### .createPassportScript(fun)
 
-##### options.event
+##### options.fun
 
-Type: `String`<br>
+Type: `Function`<br>
 
-##### options.actions
-params:
+创建passport的script标签，并设置完成时的触发
 
-    主要参数：
-    address_id: 日志id
-    content_id: 内容
-    其他参数 会合并到 click_props，如：
-       position_id: this.props.curPosition.positionId,
-       page_number: 1
-       c_id_list: ids,
-       from: locationOpts.get('tab') || 'rec',
-       action: 'click'
-            
-Type: `Object`<br>
+### .initPassport(fun)
 
-`本平台`埋点上传
+##### options.fun
 
+Type: `Function`<br>
+
+初始化 passport  
 
 
 
@@ -53,3 +50,4 @@ Type: `Object`<br>
 | 版本 | 日志 | 时间|
 | ------ | ------ | ------ |
 | v1.0.0 | 拉勾passport第一版 | 2019-04-15 |
+| v1.0.1 | 正式编辑passport业务逻辑 | 2019-04-15 |
