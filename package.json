@@ -1,6 +1,6 @@
 {
   "name": "lagou-base-passport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "passport通过共享cookie信息单点登陆",
   "main": "index.js",
   "scripts": {
@@ -9,5 +9,11 @@
   },
   "author": "lisen",
   "license": "ISC",
-  "files": ["dist", "lib", "index.js", ".gitignore", "README.md"]
+  "files": [
+    "dist",
+    "lib",
+    "index.js",
+    ".gitignore",
+    "README.md"
+  ]
 }
