@@ -4,7 +4,8 @@
   "description": "passport通过共享cookie信息单点登陆",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup ./lib/index.js -o ./dist/index.js -f umd"
   },
   "author": "lisen",
   "license": "ISC",
